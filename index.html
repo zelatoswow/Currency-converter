@@ -1,129 +1,138 @@
-<!DOCTYPE html>
 <html>
 <head>
-<title> Currency Converter</title>
-
+    <title>Currency Converter</title>
 </head>
 <style>
 body{
-background: url(https://i.imgur.com/R9QlGdL.jpg)
+    background: url(https://i.imgur.com/R9QlGdL.jpg) 
 }
 
 h1{
-background: #00cc99;
-text-align: center;
-font-size: 38px;
-padding: 20px 1em;
-font-weight: bold;
-margin-left: 35%;
-margin-right: 35%;
-cursor: pointer;
-font-family: Times New Roman;
+    background: #00CC99;
+	text-align: center;
+	font-size: 38px;
+	padding: 20px 1em;
+	font-weight: bold;
+	margin-left: 35%;
+	margin-right: 35%;
+	cursor: pointer;
+	font-family: Times New Roman;
+    border: 1px solid #000;
 }
 
 marquee{
-background:#00cc99;
-font-size: 20px;
-padding-top: 2px;
-margin:  -10px;
-margin-left: 35%;
-margin-right: 35%;
-cursor: pointer;
+    background: #00CC99;
+	font-size: 20px;
+	padding-top: 6px;
+	margin: -23px;
+	margin-left: 35%;
+	margin-right: 35%;
+	cursor: pointer;
+    border: 1px solid #000;
 }
 
 fieldset{
-width: 45%;
-margin: auto;
-border: 1px solid #000;
-text-align left;
-font-size: 20px;
-font-family: lato,sans-serif;
+    width: 45%;
+	margin: auto;
+	border: 1px solid #000;
+	text-align: left;
+	font-size: 20px;
+	font-family: lato,sans-serif;
 }
 
-input [type=number] , [id] {
-background: #fff;
-border: 1px solid #000;
-border-radius: 2px;
-border-width: 1px;
-color: #3645b;
-font-size: 15px;
-margin: 5px;
-padding: 12px;
-display: inline-block;
+input[type=number],[id]{
+    background: #fff;
+	border: 1px solid #000;
+	border-radius: 2px;
+	border-width: 1px;
+	color: #36454b;
+	font-size: 15px;
+	margin: 5px;
+	padding: 12px;
+	display: inline-block;
 }
 
-input [type=button] {
-width: 80px;
-height: 43px;
-font-weight: bold;
+input[type=button]{
+    width: 80px;
+	height: 43px;
+	font-weight: bold;
 }
 
-input [type=reset] {
-width: 55px;
-height: 75px;
-font-weight: bold;
+input[type=reset]{
+    width: 95px;
+	height: 43px;
+	font-weight: bold;
 }
-
 </style>
 
 <script>
-function currencyConverter (ValNum) {
-if(converter.SEK.value <=0)
+function currencyConverter(valNum){
+if(converter.sek.value <= 0)
 window.alert("Enter Value Greaterthan 0");
 else{
 
-document.getElementById("dollar").value = (valNum/158.93).toFixed(2);
-document.getElementById("nok").value ) valNum/158.93). toFixed(2);
-document.getElementById("yan").value = (valNum/11.96).toFixed(2);
-document.getElementById("won").value = (valNum/0.14).toFixed(2);
-document.getElementById("gbp").value = (valNum/0.088).toFixed(2);
-
+document.getElementById("dollar").value = (valNum/0.12).toFixed(2);
+document.getElementById("yuan").value = (valNum/11.96).toFixed(2);
+document.getElementById("won").value = (valNum/129.81).toFixed(2);
+document.getElementById("riyal").value = (valNum/0.43).toFixed(2);
+document.getElementById("dinar").value = (valNum/11.46).toFixed(2);
 }
 }
-
 </script>
+
 <body>
 
 <h1>Currency Converter</h1>
-<marquee direction=left> Welcome to the Online Currency Converter</marquee>
+
+<marquee>Welcome to the Online Currency Converter</marquee>
 <br><br>
 
 <form name="converter">
 
 <fieldset>
 
-<label>SEK(Svensk Krona): </label>
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;
-<input type="number" name="Svensk Krona" required>
-
+<label>Svensk Krona(SEK):  </label>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+<input type="number" name="sek" required>
+ 
 <input type="button" value="Convert" onclick="currencyConverter(converter.sek.value)"><br><br>
 
 <label>Dollar(American): </label>
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
 <input id="dollar"><br><br>
 
-<label>Nok(Norweigan Krona): </label>
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
-<input id="Nok"><br><br>
-
-<label>Yan(China): </label>
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-<input id="Yan"><br><br>
+<label>Yuan(China): </label>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+&nbsp &nbsp &nbsp 
+<input id="yuan"><br><br>
 
 <label>Won(Korea): </label>
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+&nbsp &nbsp &nbsp
 <input id="won"><br><br>
 
-<label>GBP(British Pound): </label>
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+<label>Riyal(Saudia): </label>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+&nbsp &nbsp
+<input id="riyal"><br><br>
+
+<label>Dinar(Kuwait): </label>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+&nbsp
 <input id="dinar"><br><br>
 
 <input type="reset" value="Reset Form">
 
-<p align="center">You can press the Reset Button for reseting the form</p>
+<p align="center">You can press Reset Button for reseting the form</p>
 
 </fieldset>
-
+</form>
 </body>
-
 </html>
+
