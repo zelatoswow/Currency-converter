@@ -32,7 +32,7 @@ marquee{
 }
 
 fieldset{
-    width: 25%;
+    width: 45%;
 	margin: auto;
 	border: 1px solid #000;
 	text-align: left;
@@ -47,7 +47,9 @@ input[type=number],[id]{
 	border-width: 1px;
 	color: #36454b;
 	font-size: 15px;
-	margin: center;
+		margin-left: 35%;
+	margin-right: 35%;
+
 	padding: 12px;
 	display: inline-block;
 }
@@ -59,10 +61,15 @@ input[type=button]{
 }
 
 input[type=reset]{
-    width: 95px;
-	height: 43px;
 	font-weight: bold;
+      margin-right: auto;
+
+div {
+  display: table;
+  margin-right: auto;
+  margin-left: auto;
 }
+
 </style>
 
 <script>
@@ -87,7 +94,7 @@ document.getElementById("dinar").value = (valNum/11.46).toFixed(2);
 <marquee>Welcome to the Online Currency Converter</marquee>
 <br><br>
 
-
+<div>
 <form name="converter">
 
 <fieldset>
@@ -98,6 +105,7 @@ document.getElementById("dinar").value = (valNum/11.46).toFixed(2);
 <input type="number" name="sek" required>
  
 <input type="button" value="Convert" onclick="currencyConverter(converter.sek.value)"><br><br>
+
 
 <label>Dollar(American): </label>
 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
@@ -131,6 +139,7 @@ document.getElementById("dinar").value = (valNum/11.46).toFixed(2);
 <input type="reset" value="Reset Form">
 
 <p align="center">You can press Reset Button for reseting the form</p>
+</div>
 
 
 </fieldset>
