@@ -32,23 +32,23 @@ marquee{
 }
 
 fieldset{
-    width: 35%;
+    width: 45%;
 	margin: auto;
-	border: 5px solid #000;
-	text-align: center;
+	border: 1px solid #000;
+	text-align: left;
 	font-size: 20px;
 	font-family: lato,sans-serif;
 }
 
 input[type=number],[id]{
     background: #fff;
-	border: 2px solid #000;
+	border: 1px solid #000;
 	border-radius: 2px;
 	border-width: 1px;
 	color: #36454b;
 	font-size: 15px;
-	margin: left;
-	padding: 10px;
+	margin: 5px;
+	padding: 12px;
 	display: inline-block;
 }
 
@@ -73,7 +73,7 @@ else{
 
 document.getElementById("dollar").value = (valNum/0.12).toFixed(2);
 document.getElementById("yuan").value = (valNum/11.96).toFixed(2);
-document.getElementById("won").value = (valNum/129.81).toFixed(2);
+document.getElementById("GBP").value = (valNum/11.37).toFixed(2);
 document.getElementById("riyal").value = (valNum/0.43).toFixed(2);
 document.getElementById("dinar").value = (valNum/11.46).toFixed(2);
 }
@@ -93,40 +93,38 @@ document.getElementById("dinar").value = (valNum/11.46).toFixed(2);
 
 <label>Svensk Krona(SEK):  </label>
 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
 <input type="number" name="sek" required>
  
 <input type="button" value="Convert" onclick="currencyConverter(converter.sek.value)"><br><br>
 
 <label>Dollar(American): </label>
 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
 <input id="dollar"><br><br>
 
 <label>Yuan(China): </label>
 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-&nbsp &nbsp &nbsp
+&nbsp &nbsp &nbsp 
 <input id="yuan"><br><br>
 
-<label>Won(Korea): </label>
+<label>GBP(Great British Pound): </label>
 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
 &nbsp &nbsp &nbsp
-<input id="won"><br><br>
+<input id="GBP"><br><br>
 
 <label>Riyal(Saudia): </label>
 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-&nbsp &nbsp &nbsp
+&nbsp &nbsp
 <input id="riyal"><br><br>
 
 <label>Dinar(Kuwait): </label>
 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-&nbsp &nbsp &nbsp
+&nbsp
 <input id="dinar"><br><br>
 
 <input type="reset" value="Reset Form">
